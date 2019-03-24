@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="583.0" prefWidth="757.0" stylesheets="@SpecialExtend.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myproject.SpecialExtendController">
+   <children>
+      <AnchorPane id="QuestionPane" fx:id="anchorPane" layoutX="160.0" layoutY="160.0" prefHeight="258.0" prefWidth="373.0">
+         <children>
+            <Button id="question" fx:id="a" layoutY="146.0" mnemonicParsing="false" onAction="#start" prefHeight="64.0" prefWidth="190.0" text="A" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button id="question" fx:id="c" layoutY="210.0" mnemonicParsing="false" onAction="#start" prefHeight="64.0" prefWidth="190.0" text="C" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button id="question" fx:id="b" layoutX="187.0" layoutY="146.0" mnemonicParsing="false" onAction="#start" prefHeight="64.0" prefWidth="183.0" text="B" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button id="question" fx:id="d" layoutX="187.0" layoutY="210.0" mnemonicParsing="false" onAction="#start" prefHeight="64.0" prefWidth="183.0" text="D" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Label fx:id="Question" alignment="CENTER" layoutX="9.0" layoutY="27.0" prefHeight="64.0" prefWidth="355.0" text="Question" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-1.0" layoutY="128.0" prefHeight="7.0" prefWidth="373.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="attack" layoutX="48.0" layoutY="493.0" mnemonicParsing="false" onAction="#attack" prefHeight="64.0" prefWidth="162.0" text="Attack" />
+      <Button fx:id="skill" layoutX="244.0" layoutY="493.0" mnemonicParsing="false" onAction="#skill" prefHeight="64.0" prefWidth="155.0" text="Skill" />
+      <Rectangle fx:id="bosshpRectangle" arcHeight="5.0" arcWidth="5.0" fill="RED" height="54.0" stroke="BLACK" strokeType="INSIDE" width="757.0" />
+      <Label fx:id="bosshpLabel" layoutX="347.0" layoutY="5.0" text="100" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="heroAngryRectangle" arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="54.0" layoutX="-1.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="757.0" />
+      <Rectangle fx:id="hpRectangle" arcHeight="5.0" arcWidth="5.0" fill="RED" height="24.0" layoutY="108.0" stroke="BLACK" strokeType="INSIDE" width="170.0" />
+      <Rectangle fx:id="manaRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="24.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="170.0" />
+      <Label fx:id="hpLabel" layoutX="57.0" layoutY="112.0" text="100" textFill="WHITE" />
+      <Label fx:id="manaLabel" layoutX="53.0" layoutY="136.0" text="20" textFill="WHITE" />
+      <ImageView fx:id="hero" fitHeight="89.0" fitWidth="77.0" layoutX="6.0" layoutY="350.0">
+         <image>
+            <Image url="@image/0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="boss" fitHeight="222.0" fitWidth="209.0" layoutX="517.0" layoutY="235.0">
+         <image>
+            <Image url="@image/1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="CountDown" alignment="CENTER" layoutX="271.0" layoutY="113.0" prefHeight="54.0" prefWidth="190.0" text="CountDown">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label id="damage" fx:id="damage" alignment="CENTER" layoutX="-1.0" layoutY="240.0" prefHeight="89.0" prefWidth="757.0" text="Damage" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="skillPic" fitHeight="89.0" fitWidth="77.0" layoutX="74.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="Speed" layoutX="421.0" layoutY="493.0" mnemonicParsing="false" onAction="#speed" prefHeight="65.0" prefWidth="142.0" text="Speed(1)" />
+      <GridPane id="skillGrid" fx:id="skillGp" layoutX="-1.0" layoutY="435.0" prefHeight="142.0" prefWidth="757.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="skillButton" fx:id="skillDragon" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#dragon" prefHeight="68.0" prefWidth="378.0" text="Calling Dragon           5" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button id="skillButton" fx:id="skillAttackUp" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#AttackUp" prefHeight="70.0" prefWidth="378.0" text="AttackUp                 5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button id="skillButton" fx:id="skillDefendUp" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#DefendUp" prefHeight="71.0" prefWidth="378.0" text="DefendUp                  5" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button id="skillButton" fx:id="skillRecover" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#recovery" prefHeight="73.0" prefWidth="378.0" text="Recover                   5" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="DefendTurn" layoutX="73.0" layoutY="321.0" prefHeight="24.0" prefWidth="20.0" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="DefendUpImage" fitHeight="39.0" fitWidth="32.0" layoutX="44.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="AttackUpImage" fitHeight="39.0" fitWidth="32.0" layoutX="14.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" />
+      <Button id="skillButton" fx:id="closeSkill" layoutX="710.0" layoutY="402.0" mnemonicParsing="false" onAction="#closeskill" prefHeight="31.0" prefWidth="32.0" text="X" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="BossTalking" alignment="CENTER" layoutX="533.0" layoutY="183.0" opacity="0.0" prefHeight="54.0" prefWidth="222.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="HeroTalk" alignment="CENTER" layoutX="79.0" layoutY="159.0" opacity="0.0" prefHeight="78.0" prefWidth="592.0" text="I Will Never Lose!" textFill="WHITE">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="Ulti" layoutX="601.0" layoutY="493.0" mnemonicParsing="false" onAction="#lastly" prefHeight="64.0" prefWidth="142.0" text="Ultimate" />
+      <ImageView fx:id="finalHit" fitHeight="568.0" fitWidth="749.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

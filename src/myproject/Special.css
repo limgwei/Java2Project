@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 20, 2018, 6:31:45 PM
+    Author     : lim
+*/
+
+#gp{
+    -fx-background-color: black;
+    -fx-opacity: 0.8;
+  
+   
+}
+
+#AnchorPane{
+   -fx-background-image: url("image/grass.jpg");
+   -fx-background-size: cover;
+}
+#forskill{
+    -fx-background-color: none;
+}
+#forskill:hover{
+    -fx-background-color: blue;
+}
+#cover{
+    -fx-background-color: black;
+    -fx-opacity: 0.6;
+}

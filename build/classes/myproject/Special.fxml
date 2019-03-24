@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="594.0" prefWidth="755.0" stylesheets="@Special.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myproject.SpecialController">
+   <children>
+      <Button id="forskill" fx:id="closeSkill" layoutX="704.0" layoutY="465.0" mnemonicParsing="false" onAction="#closeskill" text="X" />
+      <Button fx:id="ds" layoutX="435.0" layoutY="508.0" mnemonicParsing="false" onAction="#doubleSpeed" prefHeight="57.0" prefWidth="153.0" text="Speed(1)" />
+      <ImageView fx:id="attackup" fitHeight="32.0" fitWidth="36.0" layoutX="52.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="defendup" fitHeight="32.0" fitWidth="36.0" layoutX="83.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="turn" layoutX="117.0" layoutY="284.0" prefHeight="39.0" prefWidth="26.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="zero" fitHeight="72.0" fitWidth="61.0" layoutX="70.0" layoutY="315.0">
+         <image>
+            <Image url="@image/0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="one" fitHeight="72.0" fitWidth="68.0" layoutX="636.0" layoutY="315.0">
+         <image>
+            <Image url="@image/1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="attack" layoutX="82.0" layoutY="508.0" mnemonicParsing="false" onAction="#attack" prefHeight="57.0" prefWidth="125.0" text="Attack">
+         <tooltip>
+            <Tooltip text="Attack" />
+         </tooltip></Button>
+      <Button fx:id="skill" layoutX="246.0" layoutY="508.0" mnemonicParsing="false" onAction="#skill" prefHeight="57.0" prefWidth="125.0" text="Skill" />
+      <GridPane id="gp" fx:id="gridpane" layoutX="187.0" layoutY="143.0" prefHeight="344.0" prefWidth="368.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="ans1" alignment="CENTER" prefHeight="0.0" prefWidth="7.0" GridPane.columnIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField fx:id="ans8" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ans7" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ans6" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ans4" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ans5" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ans3" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ans2" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ans9" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ans10" alignment="CENTER" prefHeight="35.0" prefWidth="74.0" GridPane.columnIndex="4" GridPane.rowIndex="9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="9">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a2" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a10" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="9">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a9" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="8">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a8" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="7">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a7" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="6">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a6" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="5">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a5" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a4" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a3" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="a1" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b1" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b10" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b9" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b8" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b7" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b6" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b5" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b4" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b3" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="b2" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c1" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c10" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c9" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c8" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c7" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c6" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c5" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c4" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c3" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="c2" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            
+         </children>
+      </GridPane>
+      <Rectangle fx:id="hp" arcHeight="5.0" arcWidth="5.0" fill="RED" height="21.0" layoutX="1.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle fx:id="mana" arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="21.0" layoutX="1.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle fx:id="bosshp" arcHeight="5.0" arcWidth="5.0" fill="RED" height="57.0" layoutX="2.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="757.0" />
+      <Label fx:id="countdown" alignment="CENTER" layoutX="296.0" layoutY="98.0" prefHeight="45.0" prefWidth="165.0" text="CountDown">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="bosshpLabel" layoutX="299.0" layoutY="6.0" text="100" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font></Label>
+      <Label id="gp" fx:id="damage" alignment="CENTER" layoutY="249.0" prefHeight="72.0" prefWidth="757.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="hpLabel" layoutX="72.0" layoutY="81.0" text="100" textFill="WHITE" />
+      <GridPane id="gp" fx:id="forskill" layoutX="-1.0" layoutY="490.0" prefHeight="101.0" prefWidth="759.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="forskill" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#dragon" prefHeight="25.0" prefWidth="385.0" text="Calling dragon                                          5" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button id="forskill" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#defend" prefHeight="25.0" prefWidth="398.0" text="Defend Up                                                5" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button id="forskill" fx:id="recoveryButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#recovery" prefHeight="25.0" prefWidth="392.0" text="Recover                                                     5" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button id="forskill" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#doubleattack" prefHeight="25.0" prefWidth="387.0" text="Attack Up                                                  5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <ImageView fx:id="skillPic" fitHeight="125.0" fitWidth="125.0" layoutX="129.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="manaLabel" layoutX="76.0" layoutY="102.0" text="20" textFill="WHITE" />
+      <Label fx:id="critical" alignment="CENTER" layoutX="131.0" layoutY="195.0" prefHeight="57.0" prefWidth="497.0" text="Critical hit!" textFill="WHITE">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label id="cover" fx:id="cover" layoutY="6.0" prefHeight="583.0" prefWidth="757.0" />
+      <ImageView fx:id="congrats" fitHeight="200.0" fitWidth="359.0" layoutX="182.0" layoutY="11.0" opacity="0.0">
+         <image>
+            <Image url="@Gif/congrats.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="555.0" layoutY="269.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="39.0" prefWidth="74.0" text="Back ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="yeah" alignment="CENTER" layoutX="178.0" layoutY="211.0" opacity="0.0" prefHeight="83.0" prefWidth="368.0" text="Yeah" textFill="WHITE">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+     
+      
+   </children>
+</AnchorPane>

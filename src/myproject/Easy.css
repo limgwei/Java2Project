@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 12, 2018, 4:06:23 PM
+    Author     : lim
+*/
+#AnchorPane{
+    -fx-background-image: url("image/kitchen.jpg");
+    -fx-background-size: cover;
+    
+}
+#confirm{
+    -fx-background-radius: 20;
+    -fx-background-color: lightsalmon;
+    
+    
+}
+#ans{
+    -fx-background-radius: 20;
+   -fx-opacity: 0.5;
+}
+#cover{
+    -fx-background-color: black;
+    -fx-opacity: 0.8;
+}
+#back{
+     -fx-background-radius: 20;
+     -fx-background-color:lightseagreen;
+}
+#bb{
+    -fx-background-radius: 20;
+     -fx-background-color:lightgreen;
+}

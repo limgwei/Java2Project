@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootPane" prefHeight="534.0" prefWidth="765.0" stylesheets="@MathQuiz2.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myproject.MathQuiz2Controller">
+   <children>
+      <Label id="AnchorPane" layoutX="34.0" layoutY="5.0" prefHeight="533.0" prefWidth="300.0" />
+      <Button id="btnStart" fx:id="btnstart" layoutX="138.0" layoutY="113.0" maxHeight="200.0" maxWidth="200.0" mnemonicParsing="false" onAction="#btnstart" text="Start">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button id="btnStart" fx:id="exit" layoutX="154.0" layoutY="67.0" maxHeight="150.0" maxWidth="250.0" mnemonicParsing="false" onAction="#exit" text="Exit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblpro" layoutX="134.0" layoutY="113.0" text="Labelpro">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltime" layoutX="82.0" layoutY="238.0" text="Labeltime" />
+      <Label fx:id="lblsco" layoutX="166.0" layoutY="223.0" prefHeight="30.0" prefWidth="43.0" text="0%">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblque" layoutX="269.0" layoutY="238.0" text="Labelque" />
+      <Button id="button" fx:id="but1" layoutX="82.0" layoutY="279.0" maxHeight="180.0" maxWidth="180.0" mnemonicParsing="false" onAction="#but1" text="but1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="but2" layoutX="224.0" layoutY="279.0" maxHeight="180.0" maxWidth="180.0" mnemonicParsing="false" onAction="#but2" text="But2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="but3" layoutX="85.0" layoutY="335.0" maxHeight="180.0" maxWidth="180.0" mnemonicParsing="false" onAction="#but3" text="Button3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="but4" layoutX="220.0" layoutY="335.0" maxHeight="180.0" maxWidth="180.0" mnemonicParsing="false" onAction="#but4" text="Button4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbla" layoutX="152.0" layoutY="278.0" text="Labela" />
+      <Label fx:id="lblb" layoutX="282.0" layoutY="278.0" text="Labelb" />
+      <Label fx:id="lblc" layoutX="152.0" layoutY="335.0" text="Labelc" />
+      <Label fx:id="lbld" layoutX="282.0" layoutY="335.0" text="Labeld" />
+   </children>
+</AnchorPane>

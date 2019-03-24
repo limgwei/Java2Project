@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="395.0" prefWidth="729.0" stylesheets="@childhome.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myproject.childHome">
+   <children>
+      <ImageView fx:id="cloud" fitHeight="144.0" fitWidth="231.0" layoutX="31.0" layoutY="83.0">
+         <image>
+            <Image url="@Gif/BowedVerifiableEastsiberianlaika-size_restricted.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="163.0" fitWidth="231.0" layoutX="31.0" layoutY="342.0">
+         <image>
+            <Image url="@Gif/tumblr_ny9jtmhnpm1s0adc8o1_r1_1280.gif" />
+         </image>
+      </ImageView>
+      <Button id="start" fx:id="start" layoutX="286.0" layoutY="195.0" mnemonicParsing="false" onAction="#start" prefHeight="81.0" prefWidth="198.0" text="Start">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font></Button>
+      <Button layoutX="286.0" layoutY="320.0" mnemonicParsing="false" onAction="#exit" prefHeight="66.0" prefWidth="198.0" text="Quit">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font></Button>
+      <Label id="cover" fx:id="cover" prefHeight="584.0" prefWidth="729.0" stylesheets="@childhome.css" />
+      <Button id="easy" fx:id="easy" layoutX="178.0" layoutY="199.0" mnemonicParsing="false" onAction="#easy" prefHeight="75.0" prefWidth="363.0" stylesheets="@childhome.css" text="Easy">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="For Kids" />
+         </tooltip></Button>
+      <Button id="hard" fx:id="hard" layoutX="178.0" layoutY="270.0" mnemonicParsing="false" onAction="#hard" prefHeight="75.0" prefWidth="363.0" stylesheets="@childhome.css" text="Hard">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Challenge Your Self" />
+         </tooltip></Button>
+   </children>
+</AnchorPane>
